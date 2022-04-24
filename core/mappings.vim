@@ -61,3 +61,5 @@ silent nnoremap <leader>fb <cmd>Telescope buffers<cr>
 silent nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 silent nnoremap <leader>fe <cmd>Telescope file_browser<cr>
 
+tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
+
