@@ -7,6 +7,8 @@ end
 require('packer').startup(function(use)
   use({"wbthomason/packer.nvim", opt = true})
 
+  use "EdenEast/nightfox.nvim"
+
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
