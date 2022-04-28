@@ -54,7 +54,7 @@ endfunction
 silent nnoremap <Leader>fw :call SetFixWidthWindow()<CR>
 silent nnoremap <Leader>vw :call SetVariableWidthWindow()<CR>
 
-silent nnoremap <Leader>nt :NvimTreeOpen<CR>
+silent nnoremap <Leader>nt :NvimTreeOpen<CR>:set nowinfixwidth<CR>
 silent nnoremap <leader>ff <cmd>Telescope find_files<cr>
 silent nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 silent nnoremap <leader>fb <cmd>Telescope buffers<cr>
@@ -62,4 +62,3 @@ silent nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 silent nnoremap <leader>fe <cmd>Telescope file_browser<cr>
 
 tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
-
