@@ -3,6 +3,7 @@ local lsp_installer = require "nvim-lsp-installer"
 local servers = {
   sumneko_lua = require "plugins.nvim-lsp-installer.lsp.lua",
   clangd = require "plugins.nvim-lsp-installer.lsp.clangd",
+  jedi_language_server = require "plugins.nvim-lsp-installer.lsp.jedi_language_server",
 }
 
 for name, _ in pairs(servers) do
