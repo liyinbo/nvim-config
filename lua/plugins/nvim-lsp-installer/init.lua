@@ -5,6 +5,7 @@ local servers = {
   clangd = require "plugins.nvim-lsp-installer.lsp.clangd",
   jedi_language_server = require "plugins.nvim-lsp-installer.lsp.jedi_language_server",
   sourcekit = require "plugins.nvim-lsp-installer.lsp.sourcekit",
+  cmake = require "plugins.nvim-lsp-installer.lsp.cmake",
 }
 
 for name, _ in pairs(servers) do
