@@ -6,6 +6,10 @@ cmp.setup {
   }, { { name = 'buffer' },
        { name = 'path' }
     }),
+  mapping = cmp.mapping.preset.insert({
+    ['<C-j>'] = cmp.mapping.select_next_item(),
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+  }),
 }
 
 cmp.setup.cmdline('/', {
