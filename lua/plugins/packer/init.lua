@@ -11,12 +11,21 @@ require('packer').startup(function(use)
 
   use {
     'kyazdani42/nvim-tree.lua',
+    commit = 'fd2332a',
     requires = {
       'kyazdani42/nvim-web-devicons',
     },
     config = function() require'nvim-tree'.setup {
       disable_netrw       = true,
       hijack_netrw        = true,
+      --view = {
+      --  preserve_window_proportions = true,
+      --},
+      --actions = {
+      --  open_file = {
+      --    resize_window = false,
+      --  },
+      --},
 
     } end
   }
