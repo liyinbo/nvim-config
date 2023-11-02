@@ -41,8 +41,7 @@ require('packer').startup(function(use)
   use 'simrat39/symbols-outline.nvim'
 
   use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
+    'nvim-treesitter/nvim-treesitter'
   }
 
   use {
